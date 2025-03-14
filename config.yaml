@@ -1,0 +1,144 @@
+# Default configuration for the Audio Drama Generator
+
+# General settings
+general:
+  # Output audio settings
+  audio:
+    sample_rate: 44100
+    bit_depth: 16
+    channels: 2
+    format: "wav"
+
+  # Processing settings
+  processing:
+    use_gpu: true
+    parallel_processing: true
+    max_workers: 4
+    temp_directory: "temp"
+
+  # Directories
+  directories:
+    models: "models/weights"
+    sound_library: "data/sound_library"
+    output: "outputs"
+    cache: "cache"
+
+# Script parser settings
+script_parser:
+  # Character parsing
+  character:
+    extract_voice_traits: true
+    default_voice_traits:
+      pitch: "medium"
+      speed: "normal"
+      accent: "neutral"
+
+  # Sound cue parsing
+  sound:
+    cue_pattern: "\\[sound:\\s*(.+?)\\]"
+    match_threshold: 0.7
+
+  # Scene parsing
+  scene:
+    pattern: "^## (.+?)$"
+    extract_mood: true
+
+# Voice generator settings
+voice_generator:
+  # Model settings
+  models:
+    tts_model: "microsoft/speecht5_tts"
+    vocoder_model: "facebook/vits-ljspeech"
+
+  # Voice modification
+  modification:
+    enable: true
+    pitch_range: [-8, 8]
+    speed_range: [0.8, 1.2]
+
+  # Effects
+  effects:
+    reverb:
+      enabled: true
+      room_size_range: [0.1, 0.9]
+    echo:
+      enabled: true
+      delay_range: [0.1, 0.5]
+    distortion:
+      enabled: true
+      amount_range: [0.0, 0.3]
+
+# Sound manager settings
+sound_manager:
+  # Sound library
+  library:
+    enable_search: true
+    search_algorithm: "cosine_similarity"
+    fallback_to_generation: true
+
+  # Sound generation
+  generation:
+    model: "facebook/audiogen-medium"
+    duration_default: 5.0
+    max_duration: 30.0
+
+  # Sound effects
+  effects:
+    volume:
+      fade_in_default: 0.2
+      fade_out_default: 0.3
+    filter:
+      enable: true
+    pitch:
+      enable: true
+      range: [-12, 12]
+
+# Audio mixer settings
+audio_mixer:
+  # Mixing parameters
+  mixing:
+    dialogue_level: 0.0
+    narrator_level: -1.0
+    sfx_level: -6.0
+    ambient_level: -12.0
+    music_level: -9.0
+
+  # Master effects
+  master:
+    compression:
+      enable: true
+      threshold: -18.0
+      ratio: 2.0
+    limiting:
+      enable: true
+      ceiling: -0.3
+    normalization:
+      enable: true
+      target_level: -14.0
+
+  # Tracks
+  tracks:
+    dialogue:
+      eq: true
+      compression: true
+    sfx:
+      eq: true
+    ambient:
+      eq: true
+    music:
+      eq: true
+      side_chain: true
+
+# UI settings
+ui:
+  # Display settings
+  display:
+    show_progress: true
+    show_waveform: true
+    dark_mode: true
+
+  # Logging
+  logging:
+    level: "info"
+    save_logs: true
+    log_directory: "logs"
