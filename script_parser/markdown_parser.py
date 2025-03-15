@@ -69,19 +69,19 @@ class MarkdownParser:
     """
     sections = {}
 
-    # Split the document by level 2 headers (## Header)
-    section_pattern = r'^## (.+?)\s*$\n(.*?)(?=^## |\Z)'
-    matches = re.finditer(section_pattern, markdown_text, re.MULTILINE | re.DOTALL)
+    # Extract the title (# Title), allowing for indentation
+    title_match = re.search(r'^\s*#\s+(.+?)\s*$', markdown_text, re.MULTILINE)
+    if title_match:
+      sections['TITLE'] = title_match.group(1).strip()
+
+    # Extract all level 2 headers with a more flexible pattern that handles indentation
+    section_pattern = r'^\s*##\s+(.+?)\s*$\n([\s\S]*?)(?=^\s*##\s+|\s*$)'
+    matches = re.finditer(section_pattern, markdown_text, re.MULTILINE)
 
     for match in matches:
       heading = match.group(1).strip()
       content = match.group(2).strip()
       sections[heading] = content
-
-    # Also extract the title (# Title)
-    title_match = re.search(r'^# (.+?)\s*$', markdown_text, re.MULTILINE)
-    if title_match:
-      sections['TITLE'] = title_match.group(1).strip()
 
     return sections
 
