@@ -1,448 +1,328 @@
 # THE LAST SUPPER OF SAMUEL THORNE
 
-## PREMISE
-In a remote farming community, stable master Samuel Thorne invites the local men to an elaborate feast where he serves a mysterious meat dish that everyone praises. As the night progresses and the ale flows freely, Samuel reveals a disturbing truth about the meal's ingredients and the real reason he gathered them all under his roof.
+## META
+TITLE: The Last Supper of Samuel Thorne
+RUNTIME: 30-35 minutes
+PREMISE: A stable master invites local men to feast on mysterious meat, later revealing he served them his unfaithful wife's remains as revenge.
 
-## SPEAKER NOTES
+## CHARACTER_CODES
+SAMUEL: SAM
+THOMAS: THO
+HENRY: HEN
+WILLIAM: WIL
+ROBERT: ROB
+MICHAEL: MIC
+MARGARET: MAR
+NARRATOR: NAR
 
-**CHARACTERS:**
+## VOICES
+SAM: rough|weathered|rasp|rural|deliberate|menacing
+THO: deep|booming|confident|masculine
+HEN: high-pitched|nasal|nervous|quick
+WIL: smooth|educated|precise|condescending
+ROB: gravelly|clipped|mumbling|rural
+MIC: young|eager|cracking|reverent
+MAR: soft|melodic|distant|feminine
+NAR: neutral|clear|authoritative|objective
 
-**Samuel Thorne** - The stable master and host. Voice is rough, weathered, with a slight rasp. Speaks deliberately with underlying menace that grows throughout the story. Rural accent with occasional vocal breaks during emotional moments.
+## EFFECTS
+INTERNAL: whisper|reverb
+FLASHBACK: echo|distant
+AMBIENT: dining|fire|creaking|wind
+INTENSIFY: wind|increasing|tension
 
-**Thomas Walsh** - Village blacksmith. Deep, booming voice with a confident tone. Quick to laugh, slowly grows uneasy. Has a habit of clearing his throat when nervous.
+## SCENE:HOOK
 
-**Henry Watts** - Local farmer. High-pitched, nasal quality. Speaks quickly, often interrupting others. Nervous energy in his voice.
+[AMBIENT] gentle crackling of fire, distant wind
 
-**William Cooper** - Town merchant. Smooth, educated tone. Deliberate speech patterns with perfect enunciation. Condescending edge.
+[NAR] The invitations arrived on a Tuesday. Hand-delivered to five specific homes in Willow Creek. Each sealed with red wax bearing the impression of a horseshoe. Each containing the same message written in Samuel Thorne's jagged scrawl.
 
-**Robert Miller** - The miller. Gravelly voice, speaks in short, clipped sentences. Often mumbles. Heavy rural accent.
+[SFX] paper unfolding
 
-**Michael Green** - Youngest of the group. Eager, enthusiastic voice that cracks occasionally. Speaks with reverence toward the others.
+[SAM|deliberate] Your presence is requested for supper at Thorne Stables. Saturday. Sunset. Come hungry.
 
-**Margaret Thorne** - Samuel's wife (appearing only in flashbacks). Soft, melodic voice that contrasts with the men. Her voice should sound distant/echoed in memories.
+[NAR] They all accepted, of course. In a town as small as Willow Creek, one didn't decline an invitation—especially not from Samuel Thorne. Not since what happened to Margaret. Not since she disappeared.
 
-**Narrator** - Neutral, clear storyteller with perfect diction. Slightly omniscient quality without being detached. Should create intimacy with the listener through conversational delivery while maintaining narrative authority.
+[SFX] multiple footsteps approaching, door opening
 
-**Special Audio Considerations:**
-- Samuel's internal thoughts should be whispered with reverb
-- Flashback sequences should have a subtle echo effect
-- The dining room should have a specific ambiance (creaking wood, fire crackling)
-- Drinking sounds and utensils on plates should feature prominently
-- Wind outside increases as the story progresses
+[SAM|warm+tense] Welcome, gentlemen! Please, come in from the cold. The table is set, the fire is high, and the meat... well, the meat is the finest you'll ever taste.
 
-## HOOK SECTION
+[THO|jovial] Smells like heaven itself, Sam! What beast yielded such a feast?
 
-[sound: gentle crackling of fire, distant wind]
+[SAM|dark] One that wandered where it shouldn't have, Thomas. One that wandered where it shouldn't have.
 
-**Narrator:** The invitations arrived on a Tuesday. Hand-delivered to five specific homes in Willow Creek. Each sealed with red wax bearing the impression of a horseshoe. Each containing the same message written in Samuel Thorne's jagged scrawl.
+[SFX] door closing firmly, lock turning
 
-[sound: paper unfolding]
+## SCENE:SETUP
 
-**Samuel:** (reading, voice low and deliberate) "Your presence is requested for supper at Thorne Stables. Saturday. Sunset. Come hungry."
+[NAR] Samuel Thorne's home sat behind his stables, a stone structure with thick walls that kept secrets well. Inside, a long oak table dominated the main room, set with his finest pewter and six mismatched chairs. The men of Willow Creek filed in, stomping snow from their boots, their breath visible in the cold air before the heat of the fire reached them.
 
-**Narrator:** They all accepted, of course. In a town as small as Willow Creek, one didn't decline an invitation—especially not from Samuel Thorne. Not since what happened to Margaret. [pause] Not since she disappeared.
+[SFX] boots stomping, men greeting each other, chairs scraping
 
-[sound: multiple footsteps approaching, door opening]
+[THO|boisterous] By God, Samuel, it's been months since you've had company! Not since—
 
-**Samuel:** (warmly, but with underlying tension) "Welcome, gentlemen! Please, come in from the cold. The table is set, the fire is high, and the meat... [pause] well, the meat is the finest you'll ever taste."
+[SFX] awkward throat clearing
 
-**Thomas:** (jovially) "Smells like heaven itself, Sam! What beast yielded such a feast?"
+[SAM|cutting] Not since Margaret left, yes.
 
-**Samuel:** (chuckling darkly) "One that wandered where it shouldn't have, Thomas. One that wandered where it shouldn't have."
+[SAM|forced] But tonight isn't about the past. It's about sharing something special with my... dearest friends.
 
-[sound: door closing firmly, lock turning]
+[WIL|smooth] Your home looks well-kept, Samuel. I'd have thought a man alone might let things slide.
 
-## CHARACTER INTRODUCTIONS & SETUP
+[SAM|edge] Some things require meticulous attention, William. Like preparing the perfect meal. Or remembering who visits your home when you're tending the horses.
 
-**Narrator:** Samuel Thorne's home sat behind his stables, a stone structure with thick walls that kept secrets well. Inside, a long oak table dominated the main room, set with his finest pewter and six mismatched chairs. The men of Willow Creek filed in, stomping snow from their boots, their breath visible in the cold air before the heat of the fire reached them.
+[SFX] uncomfortable shifting in chairs
 
-[sound: boots stomping, men greeting each other, chairs scraping]
+[HEN|nervous] Is there, ah, an occasion for this gathering, Samuel? Harvest was weeks ago, and Christmas is still a month away.
 
-**Thomas:** (boisterously) "By God, Samuel, it's been months since you've had company! Not since—" [sound: awkward throat clearing]
+[SAM|smiling] The occasion is discovery, Henry. And celebration. I've made some... interesting discoveries lately.
 
-**Samuel:** (cutting in) "Not since Margaret left, yes." (forced cheerfulness) "But tonight isn't about the past. It's about sharing something special with my... dearest friends."
+[MIC|eager] About horses, sir? Everyone says you've a gift with them.
 
-**William:** (smoothly changing subject) "Your home looks well-kept, Samuel. I'd have thought a man alone might let things slide."
+[SAM|amused] Not horses this time, boy. Though I do understand animals. Their instincts. Their betrayals.
 
-**Samuel:** (with slight edge) "Some things require meticulous attention, William. Like preparing the perfect meal." (pause) "Or remembering who visits your home when you're tending the horses."
+[SFX] liquid pouring into cups
 
-[sound: uncomfortable shifting in chairs]
+[ROB|mumbling] Strong ale you've brewed.
 
-**Henry:** (nervously) "Is there, ah, an occasion for this gathering, Samuel? Harvest was weeks ago, and Christmas is still a month away."
+[SAM|ominous] Drink deep, friends. Tonight calls for courage. And now, the meal I promised you.
 
-**Samuel:** (smile audible in voice) "The occasion is discovery, Henry. And celebration. I've made some... interesting discoveries lately."
+[SFX] heavy platter being set down
 
-**Michael:** (young, eagerly) "About horses, sir? Everyone says you've a gift with them."
+[NAR] Samuel disappeared into the kitchen and returned with a large covered platter. Steam escaped as he lifted the lid, revealing meat so tender it seemed to fall apart at the mere proximity of the serving knife. The aroma filled the room—rich, complex, unlike any game they'd tasted before. Each man leaned forward unconsciously, drawn by a primal hunger.
 
-**Samuel:** (darkly amused) "Not horses this time, boy. Though I do understand animals. Their instincts. Their betrayals."
+[SAM|proud] Eat, gentlemen. Tell me how it tastes.
 
-[sound: liquid pouring into cups]
+## SCENE:FEAST
 
-**Robert:** (mumbling) "Strong ale you've brewed."
+[SFX] utensils on plates, appreciative murmurs
 
-**Samuel:** "Drink deep, friends. Tonight calls for courage." (beat) "And now, the meal I promised you."
+[THO|full] This is extraordinary, Samuel! What manner of beast provides such tender flesh?
 
-[sound: heavy platter being set down]
+[SAM|evasive] Something rare. Something that... knew this town well.
 
-**Narrator:** Samuel disappeared into the kitchen and returned with a large covered platter. Steam escaped as he lifted the lid, revealing meat so tender it seemed to fall apart at the mere proximity of the serving knife. The aroma filled the room—rich, complex, unlike any game they'd tasted before. Each man leaned forward unconsciously, drawn by a primal hunger.
+[WIL|analytical] Fascinating complexity. Reminds me of veal, yet... different. Sweeter somehow.
 
-**Samuel:** (with disturbing pride) "Eat, gentlemen. Tell me how it tastes."
+[SAM|watching] Sweet, yes. That's fitting.
 
-## NARRATIVE PROGRESSION
+[HEN|nervous] You hunted this yourself, Samuel?
 
-### SCENE 1: THE FEAST BEGINS
+[SAM|dark] No hunting required, Henry. It came to me. As things often do when no one's watching.
 
-[sound: utensils on plates, appreciative murmurs]
+[ROB|slow] Peculiar flavor.
 
-**Thomas:** (mouth full) "This is extraordinary, Samuel! What manner of beast provides such tender flesh?"
+[MIC|enthusiastic] I've never tasted anything like it, sir! Will you share the preparation?
 
-**Samuel:** (evasively) "Something rare. Something that... knew this town well."
+[SAM|smiling] All in good time, Michael. All in good time. First, eat. Enjoy. I want everyone to have their fill before we discuss... ingredients.
 
-**William:** (analytically) "Fascinating complexity. Reminds me of veal, yet... different. Sweeter somehow."
+[NAR] The men ate heartily, passing the platter around for second helpings. Only Samuel ate sparingly, his eyes moving from face to face, studying their expressions with unsettling intensity. Outside, the wind picked up, rattling the shutters like fingers asking to be let in.
 
-**Samuel:** (watching closely) "Sweet, yes. That's fitting."
+[SFX] wind growing stronger, shutters rattling
 
-**Henry:** (nervously) "You hunted this yourself, Samuel?"
+[SAM|raising] A toast, gentlemen. To appetites. And to Margaret.
 
-**Samuel:** (darkly) "No hunting required, Henry. It came to me. As things often do when no one's watching."
+[SFX] uncomfortable silence
 
-**Robert:** (chewing slowly) "Peculiar flavor."
+[THO|clearing] Samuel, perhaps it's best not to—
 
-**Michael:** (enthusiastically) "I've never tasted anything like it, sir! Will you share the preparation?"
+[SAM|hard] To Margaret. My wife. Who you all knew so... intimately.
 
-**Samuel:** (smiling audibly) "All in good time, Michael. All in good time. First, eat. Enjoy." (pointedly) "I want everyone to have their fill before we discuss... ingredients."
+[SFX] glasses being set down
 
-**Narrator:** The men ate heartily, passing the platter around for second helpings. Only Samuel ate sparingly, his eyes moving from face to face, studying their expressions with unsettling intensity. Outside, the wind picked up, rattling the shutters like fingers asking to be let in.
+[WIL|cautious] Samuel, we understand your grief, but it's been six months. The search parties found nothing. Sometimes people just—
 
-[sound: wind growing stronger, shutters rattling]
+[SAM|cutting] Disappear? Is that what you were going to say, William? People don't just disappear. They go somewhere. Or they become something else.
 
-**Samuel:** (raising glass) "A toast, gentlemen. To appetites. And to Margaret."
+## SCENE:SUSPICION
 
-[sound: uncomfortable silence]
+[NAR] The mood shifted like a weather vane in a storm. The rich food that had seemed so appetizing now sat heavily in their stomachs. Samuel rose and walked to the fireplace, his back to his guests, shoulders tense beneath his rough woolen shirt.
 
-**Thomas:** (clearing throat) "Samuel, perhaps it's best not to—"
+[SAM|INTERNAL] They're starting to understand. I can feel it in the air. Soon they'll know what they've consumed. What I've done.
 
-**Samuel:** (interrupting, voice hardening) "To Margaret. My wife. Who you all knew so... intimately."
+[THO|cautious] You said you had discoveries to share, Samuel?
 
-[sound: glasses being set down]
+[SAM|cold] I've been thinking about loyalty, Thomas. The loyalty of men. The loyalty of wives. Margaret was not loyal.
 
-**William:** (cautiously) "Samuel, we understand your grief, but it's been six months. The search parties found nothing. Sometimes people just—"
+[HEN|nervous] Samuel, perhaps we should—
 
-**Samuel:** (cutting in) "Disappear? Is that what you were going to say, William? People don't just disappear. They go somewhere." (leaning forward) "Or they become something else."
+[SAM|sharp] Perhaps you should listen, Henry. Since you were so eager to listen to Margaret's whispers behind the mill last spring.
 
-### SCENE 2: SUSPICIONS RISE
+[SFX] chair scraping as Henry shifts uncomfortably
 
-**Narrator:** The mood shifted like a weather vane in a storm. The rich food that had seemed so appetizing now sat heavily in their stomachs. Samuel rose and walked to the fireplace, his back to his guests, shoulders tense beneath his rough woolen shirt.
+[HEN|stammering] I—I don't know what you—
 
-**Samuel:** *They're starting to understand. I can feel it in the air. Soon they'll know what they've consumed. What I've done.*
+[SAM|cold] Don't lie at my table, Henry. Not when you've eaten my food. Not when you've tasted—
 
-**Thomas:** (cautiously) "You said you had discoveries to share, Samuel?"
+[WIL|diplomatic] Samuel, we're all friends here. Whatever grievances you believe you have—
 
-**Samuel:** (without turning) "I've been thinking about loyalty, Thomas. The loyalty of men. The loyalty of wives." (turning slowly) "Margaret was not loyal."
+[SAM|bitter] Friends? Is that what friends do, William? Visit a man's wife when he's tending horses for the town? Leave muddy boots under her bed that don't belong to her husband?
 
-**Henry:** (nervously) "Samuel, perhaps we should—"
+[SFX] tense silence
 
-**Samuel:** (sharply) "Perhaps you should listen, Henry. Since you were so eager to listen to Margaret's whispers behind the mill last spring."
+[MIC|confused] Sir, I don't understand what—
 
-[sound: chair scraping as Henry shifts uncomfortably]
+[ROB|urgent] Quiet, boy.
 
-**Henry:** (stammering) "I—I don't know what you—"
+[SAM|warm+unsettling] More meat, gentlemen? There's plenty. I made sure there would be enough for everyone.
 
-**Samuel:** (coldly) "Don't lie at my table, Henry. Not when you've eaten my food. Not when you've tasted—" (cutting himself off)
+[SFX] scraping of serving spoon on platter
 
-**William:** (diplomatic tone) "Samuel, we're all friends here. Whatever grievances you believe you have—"
+[THO|uneasy] I'm quite satisfied, thank you.
 
-**Samuel:** (laughing bitterly) "Friends? Is that what friends do, William? Visit a man's wife when he's tending horses for the town? Leave muddy boots under her bed that don't belong to her husband?"
+[SAM|insistent] But you must have more. It's a special recipe. One I created just for this gathering.
 
-[sound: tense silence]
+## SCENE:FLASHBACK
 
-**Michael:** (confused) "Sir, I don't understand what—"
+[SFX] wind howling, fire crackling
 
-**Robert:** (mumbling urgently) "Quiet, boy."
+[NAR] As the night deepened, Samuel began to speak of Margaret. His voice shifted between tenderness and rage, love and hatred, as he recounted their life together. The men sat motionless, ale forgotten, the remains of their meal congealing on their plates.
 
-**Samuel:** (suddenly warm, unsettlingly so) "More meat, gentlemen? There's plenty. I made sure there would be enough for everyone."
+[SAM|soft] She had a way of walking. Like she was always dancing to music only she could hear.
 
-[sound: scraping of serving spoon on platter]
+[SFX] faint, distant humming of a woman
 
-**Thomas:** (uneasily) "I'm quite satisfied, thank you."
+[SAM|harder] But she danced for others too, didn't she?
 
-**Samuel:** (insistently) "But you must have more. It's a special recipe. One I created just for this gathering."
+[NAR] Samuel's eyes locked on Thomas, who shifted uncomfortably in his seat.
 
-**Narrator:** Samuel moved around the table, spooning more meat onto their plates despite their protests. His hands were steady, but his eyes burned with a fevered light. The men exchanged glances, a wordless communication of growing alarm.
+[SAM|accusatory] You were first, weren't you, Thomas? While I repaired the smithy's roof. Did you think I wouldn't notice her scent on you when you paid me?
 
-### SCENE 3: MEMORIES AND REVELATIONS
+[SAM|relentless] Henry behind the mill. Robert in the granary. Even you, Michael. Barely a man, but man enough for her, apparently.
 
-[sound: wind howling, fire crackling]
+[MIC|horrified] No! I never—
 
-**Narrator:** As the night deepened, Samuel began to speak of Margaret. His voice shifted between tenderness and rage, love and hatred, as he recounted their life together. The men sat motionless, ale forgotten, the remains of their meal congealing on their plates.
+[SAM|angry] LIES!
 
-**Samuel:** (softly, almost to himself) "She had a way of walking. Like she was always dancing to music only she could hear."
+[SFX] fist slamming on table, plates jumping, liquid spilling
 
-[sound: faint, distant humming of a woman]
+[SAM|calm] I confronted her, of course. Three weeks ago. Told her I knew everything. Every man. Every betrayal.
 
-**Samuel:** (voice changing, harder) "But she danced for others too, didn't she?"
+[TRANSITION] echo effect begins
 
-**Narrator:** Samuel's eyes locked on Thomas, who shifted uncomfortably in his seat.
+[MAR|desperate] Samuel, please! It wasn't what you think!
 
-**Samuel:** "You were first, weren't you, Thomas? While I repaired the smithy's roof. Did you think I wouldn't notice her scent on you when you paid me?"
+[SAM|fury] I saw you, Margaret. With all of them. Every. Single. One.
 
-**Thomas:** (defensively) "Samuel, you're not well. Grief has—"
+[MAR|sobbing] I'll leave! I'll go away and never return. Just let me go, Samuel!
 
-**Samuel:** (ignoring him, turning to William) "And you, with your fine words and city manners. Bringing her ribbons from your travels." (mockingly) "'Just a kindness for the stable master's wife.'"
+[SAM|breaking] How can I let you go when you're the only thing I've ever loved?
 
-**William:** (firmly) "This has gone far enough."
+[SFX] struggle, scream cut short
 
-**Samuel:** (continuing relentlessly) "Henry behind the mill. Robert in the granary." (voice breaking slightly) "Even you, Michael. Barely a man, but man enough for her, apparently."
+[TRANSITION] echo effect ends
 
-**Michael:** (horrified) "No! I never—"
+[SAM|calm] She didn't suffer. I made sure of that. Quick. Clean. Like butchering a lamb.
 
-**Samuel:** (slamming fist on table) "LIES!"
+[SFX] gasps around the table
 
-[sound: plates jumping, liquid spilling]
+## SCENE:REVELATION
 
-**Samuel:** (suddenly calm again) "I watched, you see. For weeks. Saw each of you. Different days. Different times. All the same destination." (bitter laugh) "My Margaret was... generous with her affections."
+[WIL|horrified] My God, Samuel. What have you done?
 
-[sound: chair scraping]
+[SAM|smiling] God has nothing to do with this, William. This is between us. Between men who broke bread together. Who shared a wife. Who shared a meal.
 
-**Thomas:** (standing) "We're leaving, Samuel. You need help, not an audience for these delusions."
+[SFX] chair falling as someone stands abruptly
 
-**Samuel:** (dangerously quiet) "Sit down, Thomas. No one leaves until I'm finished."
+[HEN|panicking] The meat... the meat, what was—
 
-[sound: drawer opening]
+[SAM|soft] She was delicious, wasn't she? So tender. So sweet. Just as you all found her in life.
 
-**Narrator:** Samuel pulled a hunting knife from the drawer beside him. Not threatening, merely placing it on the table. A possibility. A promise.
+[MIC|retching] No... no...
 
-**Samuel:** "Don't you want to know what happened to Margaret?"
+[SAM|louder] She fed your lust, and now she's fed your gluttony! Perfect justice, wouldn't you say?
 
-[sound: hesitant sitting, tense silence]
+[THO|enraged] You're insane!
 
-**Samuel:** (almost conversationally) "I confronted her, of course. Three weeks ago. Told her I knew everything. Every man. Every betrayal."
+[SAM|shouting] I'M BETRAYED! By her! By all of you! My friends! My neighbors!
 
-*Flashback*
+[ROB|horrified] You fed us your wife...
 
-[sound: echo effect begins]
+[SAM|quiet] Not all of her. There's more in the cellar. Enough for weeks. I preserved her, just as she preserved her beauty. Salt. Smoke. Time.
 
-**Margaret:** (desperate) "Samuel, please! It wasn't what you think!"
+[NAR] The revelation hung in the air like the blade of a guillotine. Each man processed the horror differently: Michael vomited onto the floor, Henry began to pray frantically, William sat frozen in shock, Robert stared at his empty plate, and Thomas lunged for Samuel.
 
-**Samuel:** (cold fury) "I saw you, Margaret. With all of them. Every. Single. One."
+[SFX] chair crashing, struggle
 
-**Margaret:** (sobbing) "I'll leave! I'll go away and never return. Just let me go, Samuel!"
+[SAM|gritted] You enjoyed her, Thomas! All of you did! In life and now in death!
 
-**Samuel:** (voice breaking) "How can I let you go when you're the only thing I've ever loved?"
+[SFX] knife scraping across table
 
-[sound: struggle, scream cut short]
+[NAR] In the struggle, the knife skittered across the table. Robert grabbed it, his miller's hands steady despite his fear.
 
-[sound: echo effect ends]
+[ROB|clarity] Stop. Both of you.
 
-**Samuel:** (present, eerily calm) "She didn't suffer. I made sure of that. Quick. Clean. Like butchering a lamb."
+[SFX] struggle ceasing
 
-[sound: gasps around the table]
+[ROB|firm] Is it true, Samuel? Did you kill Margaret?
 
-### SCENE 4: THE TERRIBLE TRUTH
+[SAM|defiant] Yes. And I served her to you, as you deserved.
 
-**William:** (horrified) "My God, Samuel. What have you done?"
+[MIC|quiet] Why would you tell us? Why not let us live in ignorance?
 
-**Samuel:** (smiling) "God has nothing to do with this, William. This is between us. Between men who broke bread together." (leaning forward) "Who shared a wife." (pause) "Who shared a meal."
+[SAM|sincere] Because I wanted you to know. I wanted you to live with it. Every day. Every meal. For the rest of your lives.
 
-[sound: chair falling as someone stands abruptly]
+## SCENE:JUDGMENT
 
-**Henry:** (panicking) "The meat... the meat, what was—"
+[NAR] Dawn found six men still around the table. The remnants of their meal had been cleared away. The fire had died to embers. Their faces were gray with shock, disgust, and the terrible weight of decision.
 
-**Samuel:** (softly) "She was delicious, wasn't she? So tender. So sweet. Just as you all found her in life."
+[WIL|hoarse] What do we do with him?
 
-**Michael:** (retching sound) "No... no..."
+[THO|hollow] The law has no punishment for... for this.
 
-**Samuel:** (growing louder) "She fed your lust, and now she's fed your gluttony! Perfect justice, wouldn't you say?"
+[ROB|grim] Some crimes fall outside the law.
 
-**Thomas:** (enraged) "You're insane!"
+[HEN|desperate] We could say she ran off. People already think that.
 
-**Samuel:** (shouting back) "I'M BETRAYED! By her! By all of you! My friends! My neighbors!"
+[MIC|whisper] But we know. We would always know.
 
-**Robert:** (mumbling, horrified) "You fed us your wife..."
+[SAM|calm] You can't undo what's been done. What's been consumed.
 
-**Samuel:** (suddenly quiet again) "Not all of her. There's more in the cellar. Enough for weeks." (laughing) "I preserved her, just as she preserved her beauty. Salt. Smoke. Time."
+[THO|angry] Enough from you!
 
-**Narrator:** The revelation hung in the air like the blade of a guillotine. Each man processed the horror differently: Michael vomited onto the floor, Henry began to pray frantically, William sat frozen in shock, Robert stared at his empty plate, and Thomas lunged for Samuel.
+[SAM|unfazed] She's part of you now. All of you. Forever.
 
-[sound: chair crashing, struggle]
+[WIL|cold] If this became known, we'd all be ruined. Ostracized. The town would never recover.
 
-**Samuel:** (through gritted teeth) "You enjoyed her, Thomas! All of you did! In life and now in death!"
+[ROB|nodding] Some secrets must remain buried.
 
-**Thomas:** (struggling) "Someone fetch the constable!"
+[HEN|understanding] Like Margaret.
 
-**Samuel:** (laughing wildly) "And tell him what? That you devoured the woman you bedded behind my back? That you committed the ultimate sin without even knowing?"
+[MIC|realizing] And Samuel.
 
-[sound: knife scraping across table]
+[SFX] tense silence
 
-**Narrator:** In the struggle, the knife skittered across the table. Robert grabbed it, his miller's hands steady despite his fear.
+[NAR] The decision wasn't spoken aloud. It didn't need to be. It hung in the air between them, as real and solid as the table they sat around. Five men who had entered as individuals would leave as conspirators, bound by the unspeakable.
 
-**Robert:** (with sudden clarity) "Stop. Both of you."
+[SAM|afraid] Wait. What are you—
 
-[sound: struggle ceasing]
+[THO|cutting] You wanted justice, Samuel? You'll have it.
 
-**Robert:** (holding knife) "Is it true, Samuel? Did you kill Margaret?"
+[WIL|precise] Robert, the knife. Henry, bring the rope from the stable. Michael, dig in the cellar—there needs to be room for two.
 
-**Samuel:** (breathing heavily) "She betrayed me. With all of you."
+[SAM|desperate] Please! I just wanted you to understand what you took from me!
 
-**Robert:** "Answer the question."
+[NAR] But understanding had come at too high a price. For Samuel. For all of them.
 
-**Samuel:** (defiant) "Yes. And I served her to you, as you deserved."
+[SFX] struggle, door opening
 
-**William:** (voice shaking) "We need to get to the constable. This man is a murderer."
+[SAM|final] You'll taste her every time you eat! You'll remember every time you break bread! You'll never be free of this night! Never!
 
-**Samuel:** (laughing) "And what does that make you all? What's the word for men who consume human flesh?"
+[SFX] door slamming
 
-**Henry:** (whimpering) "He's lying. He must be lying. It was pork or beef or—"
+## SCENE:CONCLUSION
 
-**Samuel:** (interrupting) "Check the cellar if you don't believe me. She's there. What's left of her."
+[NAR] The stable master's house stood empty by spring. Dust gathered on the long oak table where six men had shared their last meal together. The town spoke in hushed tones of the tragic lovers: Margaret who ran away, Samuel who chased after her, neither ever seen again.
 
-**Michael:** (barely audible) "Why would you tell us? Why not let us live in ignorance?"
+[SFX] wind through empty house
 
-**Samuel:** (with terrible sincerity) "Because I wanted you to know. I wanted you to live with it. Every day. Every meal. For the rest of your lives."
+[NAR] Five men kept their silence. Five men who never again shared a meal together. Five men who would push away their plates, suddenly without appetite, when certain memories surfaced.
 
-## DIALOGUE OPTIMIZATION
+[SFX] distant church bell
 
-### SCENE 5: THE STANDOFF
+[NAR] In time, the story faded like all stories do. But in Willow Creek, an odd custom developed. No one quite remembered how it started. Something about refusing meat from a neighbor's table without first asking what it was and where it came from.
 
-**Narrator:** The knife in Robert's hand glinted in the firelight. Outside, the wind howled like a woman in mourning. Six men who had arrived as neighbors now faced each other as something else entirely—accomplices in an unspeakable act, willing or not.
+[SFX] knife cutting into meat
 
-**William:** (measured, controlling panic) "We need to think carefully about what happens next."
+[NAR] Some customs, after all, are born of terrible wisdom.
 
-**Thomas:** (furious) "What happens next is we drag this madman to the constable!"
-
-**Samuel:** (calmly) "And tell him what? That you all ate human flesh? That you cuckolded me and then consumed my revenge?"
-
-**William:** (reasoning) "No one would believe this... this absurdity without evidence."
-
-**Samuel:** (smiling) "The evidence is in your stomachs, gentlemen. And what remains of her is below our feet."
-
-**Henry:** (frantically) "He's lying! He must be lying!"
-
-**Robert:** (grimly, knife steady) "One way to know for certain."
-
-**Narrator:** Robert gestured toward the cellar door with the knife. Five pairs of eyes followed his movement, then returned to Samuel, who stood relaxed, almost relieved now that his secret was revealed.
-
-**Samuel:** *They'll never be free of this night. Neither will I. We're bound now by blood and flesh and betrayal.*
-
-**Thomas:** (decisively) "Michael, Henry—hold him. William, bring a lantern. Robert, keep that knife ready. I'll check the cellar."
-
-**Samuel:** (not resisting) "You'll find her on the salting table. What's left of her. The best cuts are already in your bellies."
-
-[sound: Samuel being restrained, struggle]
-
-**Michael:** (crying) "I never touched her, Samuel. I swear on my mother's grave!"
-
-**Samuel:** (softly) "She said you were gentle, Michael. More gentle than the others." (laughing) "More gentle than me."
-
-[sound: cellar door creaking open]
-
-**Thomas:** (calling back) "William! The light!"
-
-[sound: footsteps descending wooden stairs]
-
-**Narrator:** The room held its breath. Samuel closed his eyes, a strange smile playing across his lips. Henry's prayers became faster, more desperate. Robert's knuckles whitened around the knife handle. Michael sobbed quietly.
-
-[sound: distant scream from cellar]
-
-**William:** (urgently) "What is it?"
-
-[sound: rapid footsteps ascending]
-
-**Thomas:** (voice shaking) "It's true. God help us all, it's true."
-
-**Samuel:** (with satisfaction) "God has abandoned this room, Thomas. He left when you first betrayed me."
-
-### SCENE 6: JUDGMENT
-
-**Narrator:** Dawn found six men still around the table. The remnants of their meal had been cleared away. The fire had died to embers. Their faces were gray with shock, disgust, and the terrible weight of decision.
-
-**William:** (breaking long silence, voice hoarse) "What do we do with him?"
-
-**Thomas:** (hollow) "The law has no punishment for... for this."
-
-**Robert:** (grimly) "Some crimes fall outside the law."
-
-**Henry:** (desperately) "We could say she ran off. People already think that."
-
-**Michael:** (horrified whisper) "But we know. We would always know."
-
-**Samuel:** (calmly) "You can't undo what's been done. What's been consumed."
-
-**Thomas:** (standing suddenly) "Enough from you!"
-
-**Samuel:** (unfazed) "She's part of you now. All of you. Forever."
-
-**William:** (coldly logical) "If this became known, we'd all be ruined. Ostracized. The town would never recover."
-
-**Robert:** (nodding) "Some secrets must remain buried."
-
-**Henry:** (understanding) "Like Margaret."
-
-**Michael:** (realizing) "And Samuel."
-
-[sound: tense silence]
-
-**Narrator:** The decision wasn't spoken aloud. It didn't need to be. It hung in the air between them, as real and solid as the table they sat around. Five men who had entered as individuals would leave as conspirators, bound by the unspeakable.
-
-**Samuel:** (suddenly afraid) "Wait. What are you—"
-
-**Thomas:** (cutting him off) "You wanted justice, Samuel? You'll have it."
-
-**William:** (cold precision) "Robert, the knife. Henry, bring the rope from the stable. Michael, dig in the cellar—there needs to be room for two."
-
-**Samuel:** (struggling) "No! You can't! I'm not the monster here—you all are! You betrayed me first!"
-
-**Robert:** (quietly) "Perhaps. But you made us something worse."
-
-**Thomas:** (to the others) "We'll never speak of this night. Margaret ran away. Samuel left to find her. That's all anyone needs to know."
-
-**Samuel:** (desperate) "Please! I just wanted you to understand what you took from me!"
-
-**Narrator:** But understanding had come at too high a price. For Samuel. For all of them.
-
-[sound: struggle, door opening]
-
-**Samuel:** (final words, being dragged away) "You'll taste her every time you eat! You'll remember every time you break bread! You'll never be free of this night! Never!"
-
-[sound: door slamming]
-
-## CONCLUSION
-
-**Narrator:** The stable master's house stood empty by spring. Dust gathered on the long oak table where six men had shared their last meal together. The town spoke in hushed tones of the tragic lovers: Margaret who ran away, Samuel who chased after her, neither ever seen again.
-
-[sound: wind through empty house]
-
-**Narrator:** Five men kept their silence. Five men who never again shared a meal together. Five men who would push away their plates, suddenly without appetite, when certain memories surfaced.
-
-[sound: distant church bell]
-
-**Narrator:** In time, the story faded like all stories do. But in Willow Creek, an odd custom developed. No one quite remembered how it started. Something about refusing meat from a neighbor's table without first asking what it was and where it came from.
-
-[sound: knife cutting into meat]
-
-**Narrator:** Some customs, after all, are born of terrible wisdom.
-
-[sound: final sizzle of meat on fire, then silence]
-
-## PRODUCTION NOTES
-
-**Estimated Runtime:** 30-35 minutes
-
-**Key Emotional Moments:**
-1. Samuel's flashback to confronting Margaret - should feature overlapping voices and disorienting sound design
-2. The moment of revelation when Thomas returns from the cellar - extended pause with only breathing sounds
-3. Samuel's final plea as he's dragged away - should build to a crescendo with multiple layers of sound
-4. The epilogue about the town's custom - quiet, reflective, with subtle unease
-
-**Critical Tension Points:**
-1. The initial toast to Margaret - music should subtly shift from welcoming to uneasy
-2. Samuel's first accusation of infidelity - pacing should accelerate here
-3. The revelation about the meat - complete silence should follow this moment
-4. The men's decision to kill Samuel - pacing should be deliberately slow and methodical
-
-**Special Audio Treatment:**
-1. Create distinct "sound signatures" for each character (specific background sounds that accompany their dialogue)
-2. Use bass tones during Samuel's internal thoughts to create physical unease in listeners
-3. Gradually increase wind sounds throughout to mirror rising tension
-4. Create a specific "eating" soundscape that becomes increasingly uncomfortable as the story progresses
-5. The final meat-cutting sound should echo the sound from the beginning for circular closure
+[SFX] final sizzle of meat on fire, then silence
