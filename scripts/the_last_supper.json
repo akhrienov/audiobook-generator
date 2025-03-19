@@ -1,0 +1,1221 @@
+{
+  "metadata": {
+    "main_title": "THE LAST SUPPER",
+    "title": "The Last Supper",
+    "runtime": "25-30 minutes",
+    "premise": "A rural stable master invites his wife's lovers to a special dinner where revenge is served with a smile."
+  },
+  "characters": {
+    "THOMAS": {
+      "voice_traits": [
+        "deep",
+        "gravelly",
+        "middle-aged",
+        "rural",
+        "deliberate",
+        "controlling"
+      ]
+    },
+    "JACOB": {
+      "voice_traits": [
+        "mid-range",
+        "jovial",
+        "confident",
+        "loud",
+        "friendly",
+        "oblivious"
+      ]
+    },
+    "MARCUS": {
+      "voice_traits": [
+        "higher",
+        "nervous",
+        "fast-talking",
+        "intellectual",
+        "city-accent",
+        "anxious"
+      ]
+    },
+    "HENRY": {
+      "voice_traits": [
+        "baritone",
+        "slow",
+        "thoughtful",
+        "weathered",
+        "local-accent",
+        "cautious"
+      ]
+    },
+    "DIANE": {
+      "voice_traits": [
+        "warm",
+        "melodic",
+        "seductive",
+        "light",
+        "manipulative",
+        "absent"
+      ]
+    },
+    "NARRATOR": {
+      "voice_traits": [
+        "neutral",
+        "clear",
+        "measured",
+        "slightly-ominous",
+        "observant"
+      ]
+    }
+  },
+  "effects": {
+    "FLASHBACK": [
+      "echo",
+      "distant",
+      "muffled",
+      "dreamlike"
+    ],
+    "INTERNAL": [
+      "close",
+      "intimate",
+      "whisper",
+      "no-reverb"
+    ],
+    "LETTER": [
+      "paper-rustling",
+      "slightly-echoed",
+      "focused"
+    ]
+  },
+  "scenes": [
+    {
+      "name": "OPENING",
+      "elements": [
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "crackling fire, distant crickets, occasional animal sounds from stable"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "In the small farming community of Oakridge, where everyone knows everyone else's business—or thinks they do—Thomas Fletcher's invitation came as a pleasant surprise to the three men. A simple note, handwritten and delivered personally:"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "paper unfolding"
+        },
+        {
+          "type": "transition",
+          "description": "letter voice"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "\"Join me for dinner this Saturday. Seven o'clock. Special occasion. Best meat you'll ever taste. — Thomas, the stable master\"",
+          "modifier": "warm"
+        },
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "dining room, plates clinking, fire crackling"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "Now they sit around his oak table, these three men who thought they knew Thomas Fletcher—the quiet stable master whose hands were always busy, whose eyes rarely met yours, whose wife was the talk of the town."
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "glasses clinking, chair scraping"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "More wine, gentlemen? I've been saving this bottle for a special occasion.",
+          "modifier": "gracious"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "Don't mind if I do! Didn't take you for a wine man, Thomas. Always figured you for the ale type.",
+          "modifier": "boisterous"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "There's a lot about me people don't know, Jacob.",
+          "modifier": "measured"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "liquid pouring into glasses"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "This is... quite good meat. I don't think I've ever had anything like it before. What did you say it was again?",
+          "modifier": "nervous"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "I didn't say. But I'm glad you're enjoying it. My wife always said I was a better cook than people gave me credit for.",
+          "modifier": "pleased"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "Speaking of Diane, will she be joining us tonight?",
+          "modifier": "cautious"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "knife cutting deliberately on plate"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "No. Diane won't be joining us. Not tonight. Not ever again.",
+          "modifier": "cold-smile"
+        }
+      ]
+    },
+    {
+      "name": "ONE_WEEK_EARLIER",
+      "elements": [
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "stable sounds, horses nickering, hay rustling"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "stable door opening"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Diane? You home?",
+          "modifier": "tired"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "papers shuffling, drawer closing quickly"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Thomas! You're home early. I thought you'd be at the Henderson farm all day with that new foal.",
+          "modifier": "startled"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Came back for my other gloves. What were you looking at?",
+          "modifier": "suspicious"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Nothing, just some old letters from my mother. You know how sentimental I get sometimes.",
+          "modifier": "dismissive"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "footsteps approaching"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "She's lying. She always tucks her hair behind her ear when she's lying. Twenty years of marriage and she thinks I don't notice.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Well, I'll be heading back out then. Don't wait up for dinner. Could be a long night.",
+          "modifier": "casual"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Of course, dear. Be safe.",
+          "modifier": "relieved"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "footsteps receding, door opening"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "But I won't be going far. Not today.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door closing"
+        },
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "evening sounds, crickets, distant owl"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "Thomas didn't go to the Henderson farm that night. Instead, he waited, watching his own home from the shadows of the old oak tree. The same tree where he'd carved their initials twenty years ago. The tree they'd been married under. The tree that now concealed him as the first visitor arrived."
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "horse approaching, slowing to a stop"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "soft knock on door"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "Diane? It's me.",
+          "modifier": "hushed"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door opening"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Jacob. You're early. Come in quickly.",
+          "modifier": "whispered"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door closing"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Jacob Miller. The butcher. Always flirting with the women at market. Always making those little jokes about \"prime cuts\" and \"tender meat.\" Always looking at my wife.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "another horse approaching"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "And who's this now?",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "footsteps on gravel, quiet knock"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "Diane? Are you alone?",
+          "modifier": "nervous"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door opening slightly"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Marcus! What are you doing here? Jacob's already—",
+          "modifier": "hushed"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "I had to see you. You said your husband would be gone all night.",
+          "modifier": "pleading"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "He is, but... this isn't a good time. Come back tomorrow during his regular stable hours.",
+          "modifier": "conflicted"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door closing, frustrated sigh from Marcus"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Marcus Greene. The schoolteacher. Always with his books and his fancy words. Always offering to teach Diane poetry and literature. Always looking down on me.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "Thomas waited longer, the night growing colder around him. Just as he was about to leave, convinced he'd seen enough, a third figure appeared, walking rather than riding. Moving slowly, almost reluctantly toward the house."
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "slow footsteps on dirt path"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "This is the last time. I swore it would be the last time weeks ago. I'm getting too old for this sneaking around.",
+          "modifier": "muttering"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "quiet, distinctive knock pattern"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door opening"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Henry! I wasn't expecting you tonight.",
+          "modifier": "surprised-whisper"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "I know. I shouldn't be here. But I needed to see you, to talk about what happens when Thomas finds out. Because he will, Diane. A man like that always does.",
+          "modifier": "quiet"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door closing behind them"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Henry Blackwood. My oldest friend. The man who taught me everything I know about horses. The man who stood beside me at my wedding. The man I trusted most in this world.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "Thomas stood motionless as understanding crystallized into something cold and sharp inside him. Three men. Three different appointments. And his wife—the woman he'd built his life around—orchestrating it all."
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Twenty years. Twenty years I've loved her. Twenty years I've worked these hands to bone and callus for her. Twenty years I've been the fool.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "crumpling paper"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "No more.",
+          "modifier": "whispered-rage"
+        }
+      ]
+    },
+    {
+      "name": "THE_PLAN",
+      "elements": [
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "stable, single lantern lighting, night sounds outside"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "pencil scratching on paper"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "They think I'm simple. The quiet stable master. Good with horses, not so good with words. Not educated like Marcus. Not charming like Jacob. Not wise like Henry. Just Thomas. Reliable Thomas. Boring Thomas. Husband Thomas. The man she betrayed.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "paper being folded"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "But I understand things they don't. I understand life and death. I understand animals. I understand hunger. I understand pain.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "knife being sharpened slowly, methodically"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "And now I understand betrayal.",
+          "modifier": "whispered"
+        },
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "bedroom sounds, quiet night"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "Thomas entering bedroom silently"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Look at her sleeping. So peaceful. Does she dream of them? Does she dream of me at all?",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "sitting on edge of bed"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Thomas? Is that you?",
+          "modifier": "sleepy"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Yes, my love. It's late. Go back to sleep.",
+          "modifier": "gentle"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "How was the foal?",
+          "modifier": "mumbling"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Everything went exactly as expected. Sleep now.",
+          "modifier": "soft"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "gentle stroking of hair"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "One last time. One last touch. Twenty years, and this is where we end.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "quiet leaving of room"
+        },
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "kitchen, early morning"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "knife being taken from block"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "It would be so easy. Right now. While she sleeps. But no. That's not enough. They need to know. They all need to understand what they've done.",
+          "effect": "INTERNAL"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "paper being written on"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "\"Join me for dinner this Saturday. Seven o'clock. Special occasion. Best meat you'll ever taste.\"",
+          "modifier": "whispered"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "paper being folded into envelopes"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "A feast they'll never forget.",
+          "modifier": "cold-determination"
+        }
+      ]
+    },
+    {
+      "name": "THE_CONFRONTATION",
+      "elements": [
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "dining room, fire crackling, clock ticking"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "Back at the dinner table, the mood has shifted. What began as an unexpected but pleasant gathering has turned uncomfortably tense. Thomas's last words hang in the air, heavy with unspoken meaning."
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "What do you mean Diane won't be joining us \"ever again\"? She's just gone to visit her sister in Greenvale, right? That's what she told me—told everyone at the market last week.",
+          "modifier": "uncertain"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Did she? How thoughtful of her to create such a convincing story.",
+          "modifier": "measured"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "Thomas, you're speaking rather strangely. Is everything all right between you two?",
+          "modifier": "nervous-laugh"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "You could say things between Diane and me have reached their natural conclusion. Twenty years is a long time for a marriage. People change. Desires change. Loyalties... shift.",
+          "modifier": "smiling"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "knife stabbing into meat, making men jump"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "Thomas, old friend. Whatever's troubling you, perhaps we should discuss it another time. When you're feeling more yourself.",
+          "modifier": "cautious"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Tell me, Henry. When exactly would be a good time to discuss how my oldest friend has been sleeping with my wife? Is there a proper hour of day for that conversation?",
+          "modifier": "curious"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "glass dropping, shattering"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "I-I think I should go.",
+          "modifier": "stammering"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "No one is going anywhere. Not until dinner is finished. It would be rude to leave before the host explains the special occasion we're celebrating.",
+          "modifier": "firm"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "Now see here, Thomas—",
+          "modifier": "defensive"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "No, Jacob. You see here.",
+          "modifier": "interrupting"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "paper unfolding"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "\"My darling Jacob, his hands are always so cold. Not like yours, warm from the fire and smelling of spices. Meet me Thursday when he's tending the Henderson foal.\"",
+          "modifier": "reading"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "another paper unfolding"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "\"Marcus, your words make me feel alive in ways he never could. Bring me another poem. Something that speaks of passion. Something we can act out together.\"",
+          "modifier": "reading"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "third paper unfolding"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "\"Henry, oldest of friends, deepest of betrayals. Twenty years of looking me in the eye while desiring what was mine.\"",
+          "modifier": "reading-voice-breaking"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "papers thrown into fire"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "You went through her things? Read her private letters?",
+          "modifier": "angry"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "That's your concern? Her privacy? Not that all three of you—neighbors, friends, a man I called brother—have been making a fool of me for years?",
+          "modifier": "laughing-coldly"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "Thomas, please. Whatever you're thinking of doing—",
+          "modifier": "frightened"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "I've already done it.",
+          "modifier": "calm"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "chair scraping as Thomas stands"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Did you enjoy the meal, gentlemen? Did you savor each bite? Did you appreciate the tenderness of the meat, the special care I took in its preparation?",
+          "modifier": "deliberate"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "Thomas... what have you done?",
+          "modifier": "dawning-horror"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "You all seemed to enjoy it so much. Seconds, even thirds for you, Jacob. \"Best meat you'll ever taste\"—that's what I promised, wasn't it?",
+          "modifier": "pleased"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "No... you couldn't have...",
+          "modifier": "horrified"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "What did you feed us?",
+          "modifier": "panicking"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Who, not what.",
+          "modifier": "whispered"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "retching sounds from Marcus"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "You all wanted a taste of what was mine. Now she'll be part of you forever. The woman you desired, consumed by that very desire.",
+          "modifier": "calm"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "Jacob overturning chair in horror"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "You're lying. You're just trying to scare us. Diane is at her sister's. Tell him, Henry!",
+          "modifier": "desperate"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "I... I drove her to the stagecoach myself, three days ago.",
+          "modifier": "shaken"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Did you, Henry? Or did you just assume that's where she went after you last saw her? After she promised to leave me for you?",
+          "modifier": "smiling"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "She was alive when I last saw her. I know she was.",
+          "modifier": "trembling"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Of course she was. Then.",
+          "modifier": "calm"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "Marcus vomiting"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "I wouldn't bother trying to expel her now. She's already becoming part of you. Just as each of you became part of her in your own way.",
+          "modifier": "matter-of-fact"
+        }
+      ]
+    },
+    {
+      "name": "THE_REVELATION",
+      "elements": [
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "tense silence, clock ticking loudly, fire crackling"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "The three men sit frozen, faces pale with horror and disbelief. Thomas remains standing, watching them with the patient gaze of a predator. Outside, the wind has picked up, rattling the windows like someone desperately trying to get in—or perhaps to escape."
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "How could you do this, Thomas? You loved her.",
+          "modifier": "broken"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Yes. I did. With everything I had.",
+          "modifier": "quiet"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "This is madness! You'll hang for this!",
+          "modifier": "desperate"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Perhaps. But you three will live with this night forever. Every meal, every bite, you'll remember. You'll wonder.",
+          "modifier": "unconcerned"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "Oh God, oh God...",
+          "modifier": "sobbing"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "door suddenly opening"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "gasps from everyone"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Thomas? What's going on here?",
+          "modifier": "confused"
+        },
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "complete silence for three beats"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "Five faces locked in a tableau of shock. Four men staring at the woman in the doorway—very much alive, removing her traveling cloak, looking puzzled at the scene before her."
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Diane?",
+          "modifier": "shocked-whisper"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Yes? Who else would it be? Why do these men look like they've seen a ghost? And why is Marcus being sick in my good flowerpot?",
+          "modifier": "concerned"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "cloak being hung up"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "I came back early because the stagecoach driver said there's a storm coming. Henry, you look terrible. Jacob, why is your chair overturned?",
+          "modifier": "annoyed"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "You're... you're alive?",
+          "modifier": "stammering"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Of course I'm alive. Thomas, what have you been telling them?",
+          "modifier": "bewildered"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "But... the meat... I told them...",
+          "modifier": "stunned"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "Thomas told us... we were eating you.",
+          "modifier": "understanding-first"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "What?!",
+          "modifier": "horrified"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "But we weren't! She's here! She's alive!",
+          "modifier": "relief-laughing-hysterically"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "You sick bastard! You made us think...",
+          "modifier": "angry"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "I found the letters! I saw all three of you going to my house that night! I watched you!",
+          "modifier": "defensive"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Letters? What letters?",
+          "modifier": "confused"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "Don't pretend! The love letters you kept in the drawer! The ones you were hiding when I came home early last week!",
+          "modifier": "furious"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Those weren't... Thomas, those were for a story.",
+          "modifier": "realization"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "confused noises from the men"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "I've been writing a romance novel. Those were drafts of letters between characters. I was embarrassed for you to see them because... well, they're not very good, and I knew you'd laugh at me trying to be a writer.",
+          "modifier": "explaining"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "But I saw them! All three of them! Coming to our house when I was supposed to be gone!",
+          "modifier": "disbelieving"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Yes, because they were helping me with the story! Jacob knows about passion and physical description. Marcus understands poetry and elegant language. And Henry has actually had a romance novel published under a pen name.",
+          "modifier": "sighing"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "Adelaide Thornfield. It wasn't supposed to be common knowledge.",
+          "modifier": "embarrassed"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "But... but the meat... I told them...",
+          "modifier": "stunned"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Thomas, whose meat did you serve them?",
+          "modifier": "worried"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "The old mare. The one with the lame leg that we were going to put down next week anyway. I thought... I wanted them to think...",
+          "modifier": "small-voice"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "Jacob laughing with hysterical relief"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "Horse! We've been eating horse! Just a damn horse!",
+          "modifier": "laughing"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "That doesn't make me feel much better about it, honestly.",
+          "modifier": "still-retching"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "So no one was unfaithful? No one betrayed anyone? This was all just a... misunderstanding?",
+          "modifier": "processing"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "I was so sure. So certain.",
+          "modifier": "shame"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Oh, Thomas. After twenty years, how could you think I would ever betray you? These men could never compare to you—no offense intended.",
+          "modifier": "moving-to-Thomas"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "None taken. Quite happy not to be competition, actually.",
+          "modifier": "relieved"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "You've given me everything. A home, a life, your heart. Why would I ever look elsewhere?",
+          "modifier": "to-Thomas"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "I saw what I expected to see. What I feared most.",
+          "modifier": "tearful"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "We all do sometimes, old friend.",
+          "modifier": "somber"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "I think this dinner party is over. Gentlemen, thank you for your help with my writing. I apologize for... whatever this was.",
+          "modifier": "to-everyone"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "men shuffling, standing"
+        },
+        {
+          "type": "dialogue",
+          "character": "MARCUS",
+          "text": "Perhaps best if we don't mention this evening to anyone else.",
+          "modifier": "still-queasy"
+        },
+        {
+          "type": "dialogue",
+          "character": "JACOB",
+          "text": "Absolutely. This dinner never happened.",
+          "modifier": "agreeing"
+        },
+        {
+          "type": "dialogue",
+          "character": "HENRY",
+          "text": "We'll talk tomorrow, when heads are clearer.",
+          "modifier": "to-Thomas"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "men leaving, door closing"
+        },
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "quiet house, distant thunder"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Horse meat, Thomas? Really?",
+          "modifier": "after-pause"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "It seemed fitting at the time.",
+          "modifier": "defensive"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Actually... this would make a much better story than what I was writing.",
+          "modifier": "thoughtful"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "A stable master who serves horse meat to his wife's imaginary lovers?",
+          "modifier": "surprised-laugh"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "A man driven to the edge by love, only to discover his fears were just shadows.",
+          "modifier": "considering"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "I would have gone through with it, Diane. If my suspicions had been real. What does that make me?",
+          "modifier": "sobering"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Human, Thomas. Just human.",
+          "modifier": "gently"
+        },
+        {
+          "type": "sound",
+          "subtype": "sfx",
+          "description": "chair being pulled closer"
+        },
+        {
+          "type": "dialogue",
+          "character": "DIANE",
+          "text": "Next time you have doubts or fears, talk to me. Twenty years. No more secrets between us.",
+          "modifier": "soft"
+        },
+        {
+          "type": "dialogue",
+          "character": "THOMAS",
+          "text": "No more secrets.",
+          "modifier": "promise"
+        },
+        {
+          "type": "sound",
+          "subtype": "ambient",
+          "description": "rain beginning to fall outside"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "As the rain began to fall on the small house in Oakridge, washing away the night's misunderstandings, Thomas and Diane sat at the table where moments before he had served a meal of revenge. Tomorrow, there would be apologies to make, friendships to repair, and perhaps a story to write. But tonight, there was just the two of them, reminded of how easily we can misread the people we think we know best, and how quickly suspicion can feed on itself until it consumes everything. Sometimes, the monsters we fear most are the ones we create ourselves."
+        },
+        {
+          "type": "sound",
+          "subtype": "music",
+          "description": "gentle, bittersweet closing theme"
+        },
+        {
+          "type": "dialogue",
+          "character": "NARRATOR",
+          "text": "\"The Last Supper,\" written by [AUTHOR NAME], performed by [PRODUCTION COMPANY]. If you enjoyed this audio drama, please subscribe for more stories that explore the darker corners of the human heart, and the light that sometimes finds its way in."
+        },
+        {
+          "type": "sound",
+          "subtype": "music",
+          "description": "fades out"
+        }
+      ]
+    }
+  ]
+}
