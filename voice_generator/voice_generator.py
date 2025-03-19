@@ -83,8 +83,11 @@ class VoiceGenerator:
         # For other models, load appropriate vocoder
         self.vocoders["default"] = AutoModelForTextToSpeech.from_pretrained(vocoder_model_id).to(self.device)
 
-      # Load speaker embeddings for multi-speaker models
-      if models_config.get("preload_speakers", False):
+      # Always load speaker embeddings for SpeechT5 models
+      if "speecht5" in tts_model_id:
+        self._load_speaker_embeddings()
+      # Also load if explicitly configured
+      elif models_config.get("preload_speakers", False):
         self._load_speaker_embeddings()
 
       logger.info("Models loaded successfully")
@@ -95,20 +98,63 @@ class VoiceGenerator:
 
   def _load_speaker_embeddings(self):
     """Load pre-computed speaker embeddings if available."""
-    embedding_path = Path(self.config.get("directories", {}).get("embeddings", "models/embeddings"))
-    if not embedding_path.exists():
-      logger.warning(f"Speaker embeddings directory not found: {embedding_path}")
+    # Try different paths for speaker embeddings
+    potential_paths = [
+      Path(self.config.get("embeddings_directory",
+                           self.config.get("directories", {}).get("embeddings", "models/embeddings"))),
+      Path("models/embeddings"),
+      Path("embeddings"),
+      Path(__file__).parent.parent / "models" / "embeddings",
+      ]
+
+    # Find the first path that exists
+    embeddings_dir = None
+    for path in potential_paths:
+      if path.exists():
+        embeddings_dir = path
+        break
+
+    if not embeddings_dir:
+      logger.warning(f"Speaker embeddings directory not found. Voice generation may fail.")
       return
 
     try:
-      for emb_file in embedding_path.glob("*.pt"):
+      # Look for profile mappings first
+      mapping_path = embeddings_dir / "profile_mappings.json"
+      if mapping_path.exists():
+        import json
+        with open(mapping_path, 'r') as f:
+          mappings = json.load(f)
+        logger.info(f"Found voice profile mappings: {mapping_path}")
+
+      # Load all .pt files in the directory
+      embedding_count = 0
+      for emb_file in embeddings_dir.glob("*.pt"):
         speaker_id = emb_file.stem
         logger.info(f"Loading speaker embedding: {speaker_id}")
         self.speaker_embeddings[speaker_id] = torch.load(emb_file, map_location=self.device)
+        embedding_count += 1
 
-      logger.info(f"Loaded {len(self.speaker_embeddings)} speaker embeddings")
+      # Add mappings as aliases if we have them
+      if 'mappings' in locals():
+        for profile_name, embedding_file in mappings.items():
+          # If the value is a file name, look up the loaded embedding
+          if isinstance(embedding_file, str) and embedding_file.endswith('.pt'):
+            embedding_key = Path(embedding_file).stem
+            if embedding_key in self.speaker_embeddings and profile_name not in self.speaker_embeddings:
+              self.speaker_embeddings[profile_name] = self.speaker_embeddings[embedding_key]
+          # Otherwise, assume it's a direct speaker ID
+          elif embedding_file in self.speaker_embeddings and profile_name not in self.speaker_embeddings:
+            self.speaker_embeddings[profile_name] = self.speaker_embeddings[embedding_file]
+
+      if embedding_count > 0:
+        logger.info(f"Loaded {embedding_count} speaker embeddings from {embeddings_dir}")
+      else:
+        logger.warning(f"No speaker embeddings found in {embeddings_dir}")
+
     except Exception as e:
       logger.error(f"Error loading speaker embeddings: {str(e)}")
+      logger.warning("Voice generation may fail. Run `python -m voice_generator.download_models --embeddings-only` to download speaker embeddings.")
 
   def generate_character_voices(self, script_data: Dict[str, Any], output_dir: Optional[str] = None) -> Dict[str, Dict[str, Any]]:
     """
@@ -233,15 +279,49 @@ class VoiceGenerator:
     # Process text input
     inputs = processor(text=text, return_tensors="pt").to(self.device)
 
-    # Add speaker embedding if available
-    if "speaker_embedding" in voice_profile:
+    # Get speaker embedding
+    embedding = None
+
+    # First try speaker_id from voice profile
+    speaker_id = voice_profile.get("speaker_id")
+    if speaker_id and speaker_id in self.speaker_embeddings:
+      embedding = self.speaker_embeddings[speaker_id]
+
+    # Next try explicit speaker_embedding
+    if embedding is None and "speaker_embedding" in voice_profile:
       speaker_embedding = voice_profile["speaker_embedding"]
       if isinstance(speaker_embedding, str) and speaker_embedding in self.speaker_embeddings:
         embedding = self.speaker_embeddings[speaker_embedding]
-      else:
-        embedding = torch.tensor(speaker_embedding).to(self.device)
+      elif isinstance(speaker_embedding, str) and os.path.exists(speaker_embedding):
+        embedding = torch.load(speaker_embedding, map_location=self.device)
+      elif hasattr(speaker_embedding, "to"):  # If it's a tensor
+        embedding = speaker_embedding.to(self.device)
 
-      inputs["speaker_embeddings"] = embedding.unsqueeze(0)
+    # If still no embedding, try gender-based fallbacks
+    if embedding is None:
+      gender = voice_profile.get("gender", "neutral")
+      if f"{gender}_medium" in self.speaker_embeddings:
+        embedding = self.speaker_embeddings[f"{gender}_medium"]
+      elif gender in self.speaker_embeddings:
+        embedding = self.speaker_embeddings[gender]
+
+    # Final fallback to any available embedding
+    if embedding is None and self.speaker_embeddings:
+      if "default" in self.speaker_embeddings:
+        embedding = self.speaker_embeddings["default"]
+      else:
+        # Just use the first available embedding
+        embedding = next(iter(self.speaker_embeddings.values()))
+
+    # If we still don't have an embedding, raise a helpful error
+    if embedding is None:
+      raise ValueError(
+        "No speaker embeddings available. Please run: "
+        "python -m voice_generator.download_models --embeddings-only"
+      )
+
+    # Add the embedding to inputs
+    inputs["speaker_embeddings"] = embedding.unsqueeze(0) if embedding.dim() == 1 else embedding
 
     # Add emotion if available and model supports it
     if emotion and hasattr(processor, "process_emotion"):

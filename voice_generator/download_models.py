@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Model downloader for voice models used in the Automated Audio Drama Generator.
+Modified version of download_models.py that includes speaker embeddings download.
 
-This script downloads the necessary TTS models from Hugging Face.
+This script enhances the original download_models.py to automatically download
+speaker embeddings needed for SpeechT5.
 """
 
 import os
@@ -14,6 +15,7 @@ from typing import Dict, List, Any, Optional
 
 import torch
 import tqdm
+import requests
 from huggingface_hub import snapshot_download
 
 # Add parent directory to path to import from utils
@@ -68,6 +70,41 @@ MAC_DEV_MODELS = {
   }
 }
 
+# Speaker embeddings from CMU Arctic dataset
+SPEAKER_EMBEDDINGS = {
+  "source": "Matthijs/cmu-arctic-xvectors",
+  "files": [
+    "cmu_us_bdl_arctic-xvector.pt",  # Male deep voice
+    "cmu_us_rms_arctic-xvector.pt",  # Male medium voice
+    "cmu_us_jmk_arctic-xvector.pt",  # Male light voice
+    "cmu_us_clb_arctic-xvector.pt",  # Female voice
+    "cmu_us_slt_arctic-xvector.pt",  # Female voice
+    "cmu_us_ksp_arctic-xvector.pt",  # Female voice
+    "cmu_us_awb_arctic-xvector.pt",  # Neutral voice
+  ],
+  "description": "Speaker embeddings for SpeechT5",
+  "size_mb": 10  # Approximate size for all embeddings
+}
+
+# Voice profile to embedding mappings
+SPEAKER_MAPPINGS = {
+  # Male voices
+  "male_deep": "cmu_us_bdl_arctic-xvector.pt",
+  "male_medium": "cmu_us_rms_arctic-xvector.pt",
+  "male_light": "cmu_us_jmk_arctic-xvector.pt",
+
+  # Female voices
+  "female_deep": "cmu_us_clb_arctic-xvector.pt",
+  "female_medium": "cmu_us_slt_arctic-xvector.pt",
+  "female_light": "cmu_us_ksp_arctic-xvector.pt",
+
+  # Neutral voice
+  "neutral": "cmu_us_awb_arctic-xvector.pt",
+
+  # Default fallback
+  "default": "cmu_us_rms_arctic-xvector.pt"
+}
+
 def download_huggingface_model(model_id: str, output_dir: Path, force: bool = False) -> bool:
   """
   Download a model from Hugging Face.
@@ -109,6 +146,80 @@ def download_huggingface_model(model_id: str, output_dir: Path, force: bool = Fa
     logger.error(f"Error downloading {model_id}: {str(e)}")
     return False
 
+def download_speaker_embeddings(output_dir: Path, force: bool = False) -> bool:
+  """
+  Download speaker embeddings for SpeechT5.
+
+  Args:
+      output_dir: Directory to save the speaker embeddings
+      force: Force re-download even if embeddings exist
+
+  Returns:
+      True if successful, False otherwise
+  """
+  try:
+    # Create the embeddings directory
+    embeddings_dir = output_dir
+    embeddings_dir.mkdir(parents=True, exist_ok=True)
+
+    logger.info(f"Downloading speaker embeddings to {embeddings_dir}...")
+
+    # Download each embedding file from Hugging Face
+    source = SPEAKER_EMBEDDINGS["source"]
+    base_url = f"https://huggingface.co/datasets/{source}/resolve/main/"
+
+    success_count = 0
+    for file_name in SPEAKER_EMBEDDINGS["files"]:
+      output_path = embeddings_dir / Path(file_name).name
+
+      # Skip if file already exists and not forcing re-download
+      if not force and output_path.exists():
+        logger.info(f"Speaker embedding {file_name} already exists")
+        success_count += 1
+        continue
+
+      # Download the file
+      file_url = base_url + file_name
+      logger.info(f"Downloading {file_url} to {output_path}")
+
+      try:
+        # Download with progress bar
+        response = requests.get(file_url, stream=True)
+        total_size = int(response.headers.get('content-length', 0))
+
+        with open(output_path, 'wb') as file, tqdm.tqdm(
+            desc=file_name,
+            total=total_size,
+            unit='B',
+            unit_scale=True,
+            unit_divisor=1024,
+        ) as bar:
+          for data in response.iter_content(chunk_size=1024):
+            size = file.write(data)
+            bar.update(size)
+
+        success_count += 1
+        logger.info(f"Successfully downloaded {file_name}")
+      except Exception as e:
+        logger.error(f"Error downloading {file_name}: {str(e)}")
+
+    # Create a JSON file with the mappings
+    if success_count > 0:
+      import json
+      mappings_path = embeddings_dir / "profile_mappings.json"
+
+      # Create mapping from voice profiles to embedding files
+      with open(mappings_path, 'w') as f:
+        json.dump(SPEAKER_MAPPINGS, f, indent=2)
+
+      logger.info(f"Created voice profile mappings at {mappings_path}")
+
+    return success_count == len(SPEAKER_EMBEDDINGS["files"])
+
+  except Exception as e:
+    logger.error(f"Error downloading speaker embeddings: {str(e)}")
+    return False
+
 def create_speaker_embeddings(models_dir: Path, output_dir: Path) -> bool:
   """
   Create sample speaker embeddings for different voice profiles.
@@ -121,6 +232,20 @@ def create_speaker_embeddings(models_dir: Path, output_dir: Path) -> bool:
       True if successful, False otherwise
   """
   try:
+    # Check if we've already downloaded the embeddings
+    if any(output_dir.glob("*.pt")):
+      logger.info("Speaker embeddings already exist, skipping creation step")
+
+      # Create the mappings file if it doesn't exist
+      import json
+      mappings_path = output_dir / "profile_mappings.json"
+      if not mappings_path.exists():
+        with open(mappings_path, 'w') as f:
+          json.dump(SPEAKER_MAPPINGS, f, indent=2)
+        logger.info(f"Created voice profile mappings at {mappings_path}")
+
+      return True
+
     # Make sure the embedding directory exists
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -268,7 +393,8 @@ def main():
   parser.add_argument("--output-dir", "-o", help="Directory to save models")
   parser.add_argument("--force", "-f", action="store_true", help="Force re-download of models")
   parser.add_argument("--mac-dev", "-m", action="store_true", help="Download smaller models for Mac development")
-  parser.add_argument("--skip-embeddings", "-s", action="store_true", help="Skip generating speaker embeddings")
+  parser.add_argument("--skip-embeddings", "-s", action="store_true", help="Skip downloading speaker embeddings")
+  parser.add_argument("--embeddings-only", "-e", action="store_true", help="Download only speaker embeddings")
 
   args = parser.parse_args()
 
@@ -294,9 +420,30 @@ def main():
   else:
     models_to_download = VOICE_MODELS
 
+  # Download speaker embeddings only if requested
+  if args.embeddings_only:
+    # Determine embeddings directory
+    embeddings_dir = Path(config.get("voice_generator", {}).get(
+      "embeddings_directory",
+      config.get("general", {}).get("directories", {}).get("embeddings", "models/embeddings")
+    ))
+
+    logger.info(f"Downloading speaker embeddings only to {embeddings_dir}")
+    success = download_speaker_embeddings(embeddings_dir, args.force)
+
+    if success:
+      logger.info("Speaker embeddings downloaded successfully")
+      return 0
+    else:
+      logger.error("Failed to download speaker embeddings")
+      return 1
+
   # Calculate total download size
   total_size_mb = sum(model["size_mb"] for model in models_to_download.values())
-  logger.info(f"Preparing to download {len(models_to_download)} models (~{total_size_mb} MB)")
+  if not args.skip_embeddings:
+    total_size_mb += SPEAKER_EMBEDDINGS["size_mb"]
+
+  logger.info(f"Preparing to download models and embeddings (~{total_size_mb} MB)")
 
   # Check if there's enough disk space
   try:
@@ -320,7 +467,7 @@ def main():
 
   logger.info(f"Downloaded {success_count}/{len(models_to_download)} models successfully")
 
-  # Generate speaker embeddings if needed
+  # Download speaker embeddings if needed
   if not args.skip_embeddings:
     # Determine embeddings directory
     embeddings_dir = Path(config.get("voice_generator", {}).get(
@@ -328,11 +475,15 @@ def main():
       config.get("general", {}).get("directories", {}).get("embeddings", "models/embeddings")
     ))
 
-    # Create speaker embeddings
-    if create_speaker_embeddings(models_dir, embeddings_dir):
-      logger.info("Speaker embeddings generated successfully")
+    # Try downloading speaker embeddings first (from CMU Arctic dataset)
+    embeddings_success = download_speaker_embeddings(embeddings_dir, args.force)
+
+    if embeddings_success:
+      logger.info("Speaker embeddings downloaded successfully")
     else:
-      logger.warning("Failed to generate speaker embeddings")
+      # If download fails, try creating embeddings using the SpeechBrain model
+      logger.warning("Failed to download speaker embeddings, trying to create them...")
+      create_speaker_embeddings(models_dir, embeddings_dir)
 
   return 0 if success_count == len(models_to_download) else 1
 
